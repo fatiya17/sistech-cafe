@@ -97,7 +97,7 @@ export default function Hero() {
           <div className="flex flex-col-reverse md:flex-row items-start md:items-center justify-between w-full mt-6 md:mt-2 mb-6 md:mb-2 relative">
             {/* Paragraph (Sub-headline) */}
             <div className="hero-item w-full md:w-[550px] mt-6 md:mt-0 md:pl-[15%]">
-              <p className="text-text-body text-base md:text-md leading-relaxed font-medium">
+              <p className="text-text-black text-base md:text-md leading-relaxed font-medium">
                 Menyajikan kopi artisanal dengan sentuhan kehangatan rumah. Tempat di mana setiap tegukan bercerita, memadukan cita rasa lokal dengan <i>modern comfort</i> untuk menemani harimu.
               </p>
             </div>
@@ -118,9 +118,9 @@ export default function Hero() {
               </h1>
               {/* Badge "o" replacing the letter */}
               <div className="hero-scale flex items-center justify-center mx-1 md:mx-2">
-                <div className="flex flex-col items-center justify-center w-12 h-12 md:w-20 md:h-20 rounded-[333px] bg-surface">
-                  <span className="text-[9px] md:text-sm font-bold text-secondary leading-none mb-0.5 md:mb-1">since</span>
-                  <span className="text-[11px] md:text-lg font-bold text-primary leading-none">2026</span>
+                <div className="flex flex-col items-center justify-center w-12 h-12 md:w-16 md:h-16 rounded-[333px] bg-surface border border-dashed border-border">
+                  <span className="text-[9px] md:text-[11px] font-bold text-secondary leading-none mb-0.5 md:mb-1">since</span>
+                  <span className="text-[11px] md:text-[13px] font-bold text-primary leading-none">2026</span>
                 </div>
               </div>
               <h1 className="hero-item font-heading text-[3.5rem] md:text-[6rem] leading-[0.9] text-text-primary tracking-tight">
