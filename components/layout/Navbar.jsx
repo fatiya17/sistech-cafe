@@ -57,14 +57,14 @@ export default function Navbar() {
     <>
       <nav
         className={`fixed top-0 w-full z-40 transition-colors duration-300 ${
-          scrolled ? "bg-secondary/95 backdrop-blur-md shadow-sm border-b border-border" : "bg-transparent"
+          scrolled ? "bg-primary/65 backdrop-blur-md shadow-sm border-b border-border" : "bg-transparent"
         }`}
       >
         <div className="max-w-[1280px] mx-auto px-4 md:px-8 h-14 md:h-16 flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
-            <div className="relative w-8 h-8 md:w-10 md:h-10 transition-transform duration-300 group-hover:scale-110">
-              <Image src="/mascot/logo-mascot.png" alt="Mascot Sistech Cafe" fill className="object-contain" />
+            <div className="relative w-8 h-8 md:w-9 md:h-9 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-[360deg]">
+              <Image src="/assets/flower-polos-2.png" alt="Mascot Sistech Cafe" fill sizes="64px" className="object-contain" />
             </div>
             <span className={`font-heading font-medium text-xl md:text-xl ${scrolled ? "text-white" : "text-text-primary dark:text-white"}`}>
               sistech cafe
