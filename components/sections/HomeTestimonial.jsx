@@ -58,7 +58,7 @@ export default function HomeTestimonial() {
             <div className="w-20 h-14 relative bg-primary-light rounded-md overflow-hidden shrink-0">
                {/* Placeholder for image, using mascot image for now */}
                <Image 
-                src="/mascot/mascot-fullbody1.png" 
+                src="/assets/mascot-fullbody1.png" 
                 alt="Happy customer" 
                 fill 
                 className="object-cover opacity-80 mix-blend-multiply"
