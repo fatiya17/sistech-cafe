@@ -64,15 +64,15 @@ export default function Hero() {
 
   return (
     <section ref={containerRef} className="relative w-full min-h-[85vh] flex flex-col justify-center items-center py-12 px-4 overflow-hidden bg-transparent">
-      <div className="max-w-[1000px] mx-auto px-4 md:px-8 w-full relative z-10">
+      <div className="container-site px-4 md:px-8 w-full relative z-10">
         <div className="flex flex-col w-full">
           {/* Row 1: "brewed [mascot] with" */}
           <div className="flex flex-wrap items-center justify-start gap-x-3 md:gap-x-6 gap-y-2 mb-2 md:mb-0">
-            <h1 className="hero-item font-heading text-[3.5rem] md:text-[6rem] leading-[0.9] text-text-primary tracking-tight">
+            <h1 className="hero-item font-heading text-hero-sm md:text-hero-lg leading-[0.9] text-text-primary tracking-tight">
               brewed
             </h1>
             <div 
-              className="hero-scale relative w-[6rem] h-[6rem] md:w-[7.5rem] md:h-[7.5rem] z-10 mx-1 md:mx-2 cursor-pointer flex items-center justify-center"
+              className="hero-scale relative w-16 h-16 md:w-20 md:h-20 z-10 mx-2 md:mx-4 cursor-pointer flex items-center justify-center"
               ref={mascotRef}
               onMouseEnter={onMascotEnter}
               onMouseLeave={onMascotLeave}
@@ -80,15 +80,15 @@ export default function Hero() {
               {/* Mascot image inline */}
               <div className="w-full h-full relative">
                  <Image 
-                   src="/mascot/coffee-1.png" 
+                   src="/assets/flower-polos-3.png" 
                    alt="Sistech Coffee" 
                    fill 
-                   className="object-contain w-full h-full" 
+                   className="object-contain" 
                    priority
                  />
               </div>
             </div>
-            <h1 className="hero-item font-heading text-[3.5rem] md:text-[6rem] leading-[0.9] text-text-primary tracking-tight">
+            <h1 className="hero-item font-heading text-hero-sm md:text-hero-lg leading-[0.9] text-text-primary tracking-tight">
               with
             </h1>
           </div>
@@ -104,7 +104,7 @@ export default function Hero() {
             
             {/* "kasih &" text */}
             <div className="hero-item flex flex-wrap items-center md:justify-end gap-x-3 w-full md:w-auto">
-              <h1 className="font-heading text-[3.5rem] md:text-[6rem] leading-[0.9] text-text-primary tracking-tight">
+              <h1 className="font-heading text-hero-sm md:text-hero-lg leading-[0.9] text-text-primary tracking-tight">
                 kasih &
               </h1>
             </div>
@@ -113,17 +113,17 @@ export default function Hero() {
           {/* Row 3: "passi[badge]n" and Button */}
           <div className="flex flex-col md:flex-row items-start md:items-end justify-between w-full mt-2 md:mt-4 gap-8 md:gap-4 relative">
             <div className="flex items-center gap-x-1 md:gap-x-2">
-              <h1 className="hero-item font-heading text-[3.5rem] md:text-[6rem] leading-[0.9] text-text-primary tracking-tight">
+              <h1 className="hero-item font-heading text-hero-sm md:text-hero-lg leading-[0.9] text-text-primary tracking-tight">
                 passi
               </h1>
               {/* Badge "o" replacing the letter */}
               <div className="hero-scale flex items-center justify-center mx-1 md:mx-2">
                 <div className="flex flex-col items-center justify-center w-12 h-12 md:w-16 md:h-16 rounded-[333px] bg-surface border border-dashed border-border">
-                  <span className="text-[9px] md:text-[11px] font-bold text-secondary leading-none mb-0.5 md:mb-1">since</span>
-                  <span className="text-[11px] md:text-[13px] font-bold text-primary leading-none">2026</span>
+                  <span className="text-tiny md:text-xs font-bold text-secondary leading-none mb-0.5 md:mb-1">since</span>
+                  <span className="text-xs md:text-sm font-bold text-primary leading-none">2026</span>
                 </div>
               </div>
-              <h1 className="hero-item font-heading text-[3.5rem] md:text-[6rem] leading-[0.9] text-text-primary tracking-tight">
+              <h1 className="hero-item font-heading text-hero-sm md:text-hero-lg leading-[0.9] text-text-primary tracking-tight">
                 n
               </h1>
             </div>

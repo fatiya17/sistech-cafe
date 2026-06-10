@@ -6,39 +6,36 @@ import { Button } from "@/components/ui/button";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+import { ProductCard } from "@/components/menu/ProductCard";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
-const menuItems = [
+const featuredItems = [
   {
-    title: "signature coffee",
-    tags: ["espresso", "latte", "cappuccino"],
-    bgClass: "bg-[#F3E9DC]",
-    iconColor: "bg-orange-200",
+    id: 1,
+    title: "Kopi Susu Gula Aren",
+    price: 25000,
+    bgColorClass: "bg-background",
+    isHit: true,
+    image: "/assets/kopi gula aren.png",
+    imageScale: "scale-110",
   },
   {
-    title: "artisanal tea",
-    tags: ["matcha", "earl grey", "chamomile"],
-    bgClass: "bg-[#F3E9DC]",
-    iconColor: "bg-green-200",
+    id: 2,
+    title: "Matcha Latte",
+    price: 28000,
+    bgColorClass: "bg-primary-light",
+    isHit: true,
+    image: "/assets/matcha latte.png",
+    imageScale: "scale-110",
   },
   {
-    title: "fresh pastries",
-    tags: ["croissant", "muffin", "danish"],
-    bgClass: "bg-[#F3E9DC]",
-    iconColor: "bg-yellow-200",
-  },
-  {
-    title: "heavy bites",
-    tags: ["pasta", "sandwich", "toast"],
-    bgClass: "bg-[#F3E9DC]",
-    iconColor: "bg-red-200",
-  },
-  {
-    title: "seasonal specials",
-    tags: ["limited time", "summer blend"],
-    bgClass: "bg-[#F3E9DC]",
-    iconColor: "bg-blue-200",
+    id: 9,
+    title: "Croffle Classic",
+    price: 22000,
+    bgColorClass: "bg-background",
+    isHit: true,
+    image: "/assets/Croffle Classic.png",
   },
 ];
 
@@ -47,7 +44,7 @@ export default function HomeMenu() {
 
   const { contextSafe } = useGSAP(() => {
     // Scroll animation for cards
-    gsap.from(".menu-card", {
+    gsap.from(".menu-wrapper", {
       scrollTrigger: {
         trigger: containerRef.current,
         start: "top 80%",
@@ -82,63 +79,51 @@ export default function HomeMenu() {
 
   return (
     <section ref={containerRef} className="w-full py-12 md:py-16 px-6 md:px-12 bg-transparent overflow-hidden">
-      <div className="max-w-[1000px] mx-auto">
-        <h2 className="menu-card font-heading font-medium text-3xl md:text-4xl text-text-primary text-center mb-20">
+      <div className="container-site">
+        <h2 className="menu-wrapper font-heading font-medium text-3xl md:text-4xl text-text-primary text-center mb-20">
           featured menu
         </h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {menuItems.map((item, index) => (
-            <div 
-              key={index}
-              onMouseEnter={onCardEnter}
-              onMouseLeave={onCardLeave}
-              className="menu-card cursor-pointer relative flex flex-col h-[320px] rounded-md p-8 border border-[#675E50] border-dashed bg-transparent"
-            >
-              {/* Decorative "Icon" area */}
-              <div className="flex -space-x-4 mb-auto pointer-events-none">
-                <div className={`w-16 h-16 rounded-md ${item.iconColor} shadow-sm rotate-[-6deg]`}></div>
-                <div className={`w-16 h-16 rounded-md bg-white shadow-sm rotate-[6deg]`}></div>
-              </div>
-              
-              <h3 className="font-heading font-medium text-xl text-text-primary mb-6 pointer-events-none">
-                {item.title}
-              </h3>
-              
-              <div className="flex flex-wrap gap-2 mt-auto pointer-events-none">
-                {item.tags.map((tag, idx) => (
-                  <span 
-                    key={idx}
-                    className="px-3 py-1 bg-[#FFF5D4] text-[#574933] text-[12px] font-semibold rounded-[6px]"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
+        {/* Adjusted the gap to gap-3 md:gap-4 so the cards have more room inside max-w-container */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 gap-y-10">
+          {featuredItems.map((product) => (
+            <div key={product.id} className="menu-wrapper w-full h-full">
+              <ProductCard
+                title={product.title}
+                price={product.price}
+                image={product.image}
+                imageScale={product.imageScale}
+                bgColorClass={product.bgColorClass}
+                isHit={product.isHit}
+                onMouseEnter={onCardEnter}
+                onMouseLeave={onCardLeave}
+              />
             </div>
           ))}
 
           {/* Dark CTA Card */}
-          <div 
-            onMouseEnter={onCardEnter}
-            onMouseLeave={onCardLeave}
-            className="menu-card relative flex flex-col h-[320px] rounded-md p-8 bg-secondary border border-secondary"
-          >
-            <div className="flex -space-x-2 mb-auto pointer-events-none">
-              <div className="w-4 h-4 rounded-full bg-primary-light"></div>
-              <div className="w-4 h-4 rounded-full bg-yellow-300"></div>
-              <div className="w-4 h-4 rounded-full bg-blue-300"></div>
+          <div className="menu-wrapper w-full h-full">
+            <div 
+              onMouseEnter={onCardEnter}
+              onMouseLeave={onCardLeave}
+              className="menu-card relative w-full aspect-auto min-h-[180px] sm:min-h-0 sm:aspect-[4/5] rounded-md p-5 flex flex-col justify-between bg-secondary border border-secondary"
+            >
+              <div className="flex -space-x-2 mb-auto pointer-events-none">
+                <div className="w-4 h-4 rounded-full bg-primary-light"></div>
+                <div className="w-4 h-4 rounded-full bg-pastel-yellow"></div>
+                <div className="w-4 h-4 rounded-full bg-pastel-blue"></div>
+              </div>
+              
+              <h3 className="font-heading font-semibold text-lg xl:text-xl leading-tight text-white mb-6 pointer-events-none">
+                craving for more?
+              </h3>
+              
+              <Link href="/menu" className="mt-auto w-full">
+                <Button variant="primary" className="bg-primary-light text-secondary hover:bg-primary hover:text-white rounded-md px-3 xl:px-6 h-12 text-sm xl:text-base w-full pointer-events-auto border-none">
+                  view full menu
+                </Button>
+              </Link>
             </div>
-            
-            <h3 className="font-heading font-semibold text-xl leading-tight text-white mb-8 pointer-events-none">
-              craving for more?
-            </h3>
-            
-            <Link href="/menu" className="mt-auto">
-              <Button variant="primary" className="bg-primary-light text-secondary hover:bg-primary hover:text-white rounded-md px-6 h-12 text-base w-max pointer-events-auto border-none">
-                view full menu
-              </Button>
-            </Link>
           </div>
         </div>
       </div>

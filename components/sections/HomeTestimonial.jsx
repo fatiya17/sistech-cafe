@@ -34,7 +34,7 @@ export default function HomeTestimonial() {
 
   return (
     <section ref={containerRef} className="w-full px-6 md:px-12 bg-transparent mb-12">
-      <div className="max-w-[1000px] mx-auto overflow-hidden p-2">
+      <div className="container-site overflow-hidden p-2">
         <div 
           className="testimonial-card w-full bg-surface rounded-md p-4 md:p-6 flex flex-col md:flex-row items-center justify-between gap-8 border border-border border-dashed"
           onMouseEnter={onCardEnter}
@@ -49,7 +49,7 @@ export default function HomeTestimonial() {
               <div className="flex text-orange-500 text-base">
                 ★★★★★
               </div>
-              <span className="text-[12px] font-medium text-text-muted">trusted by coffee lovers</span>
+              <span className="text-xs font-medium text-text-muted">trusted by coffee lovers</span>
             </div>
           </div>
           
@@ -64,7 +64,7 @@ export default function HomeTestimonial() {
                 className="object-cover opacity-80 mix-blend-multiply"
               />
             </div>
-            <p className="text-xs md:text-sm font-medium text-text-primary leading-tight max-w-[200px]">
+            <p className="text-xs md:text-sm font-medium text-text-primary leading-tight max-w-52">
               1000+ cups served with love to our community.
             </p>
           </div>

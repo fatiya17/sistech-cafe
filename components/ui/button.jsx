@@ -61,7 +61,7 @@ const Button = React.forwardRef(({
   }, []);
 
   const handleMouseEnter = (e) => {
-    if (!buttonRef.current || !flairRef.current) return;
+    if (!buttonRef.current || !flairRef.current || typeof xSet.current !== "function" || typeof ySet.current !== "function") return;
     const rect = buttonRef.current.getBoundingClientRect();
     const x = ((e.clientX - rect.left) / rect.width) * 100;
     const y = ((e.clientY - rect.top) / rect.height) * 100;
@@ -72,7 +72,7 @@ const Button = React.forwardRef(({
   };
 
   const handleMouseLeave = (e) => {
-    if (!buttonRef.current || !flairRef.current) return;
+    if (!buttonRef.current || !flairRef.current || typeof xSet.current !== "function" || typeof ySet.current !== "function") return;
     const rect = buttonRef.current.getBoundingClientRect();
     const x = ((e.clientX - rect.left) / rect.width) * 100;
     const y = ((e.clientY - rect.top) / rect.height) * 100;
@@ -83,7 +83,7 @@ const Button = React.forwardRef(({
   };
 
   const handleMouseMove = (e) => {
-    if (!buttonRef.current || !flairRef.current) return;
+    if (!buttonRef.current || !flairRef.current || typeof xSet.current !== "function" || typeof ySet.current !== "function") return;
     const rect = buttonRef.current.getBoundingClientRect();
     const x = ((e.clientX - rect.left) / rect.width) * 100;
     const y = ((e.clientY - rect.top) / rect.height) * 100;
