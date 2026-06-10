@@ -83,7 +83,7 @@ export default function HomeMenu() {
   return (
     <section ref={containerRef} className="w-full py-12 md:py-16 px-6 md:px-12 bg-transparent overflow-hidden">
       <div className="max-w-[1000px] mx-auto">
-        <h2 className="menu-card font-heading font-medium text-3xl md:text-4xl text-text-primary text-center mb-16">
+        <h2 className="menu-card font-heading font-medium text-3xl md:text-4xl text-text-primary text-center mb-20">
           featured menu
         </h2>
         
@@ -109,7 +109,7 @@ export default function HomeMenu() {
                 {item.tags.map((tag, idx) => (
                   <span 
                     key={idx}
-                    className="px-3 py-1 bg-[#FFF5D4] text-[#574933] text-[10px] font-semibold rounded-[6px]"
+                    className="px-3 py-1 bg-[#FFF5D4] text-[#574933] text-[12px] font-semibold rounded-[6px]"
                   >
                     {tag}
                   </span>
@@ -135,7 +135,7 @@ export default function HomeMenu() {
             </h3>
             
             <Link href="/menu" className="mt-auto">
-              <Button variant="primary" className="bg-primary-light text-secondary hover:bg-primary hover:text-white rounded-md px-6 h-12 text-sm w-max pointer-events-auto border-none">
+              <Button variant="primary" className="bg-primary-light text-secondary hover:bg-primary hover:text-white rounded-md px-6 h-12 text-base w-max pointer-events-auto border-none">
                 view full menu
               </Button>
             </Link>
