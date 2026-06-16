@@ -85,7 +85,7 @@ export default function HomeMenu() {
         </h2>
         
         {/* Adjusted the gap to gap-3 md:gap-4 so the cards have more room inside max-w-container */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 gap-y-10">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4 gap-y-10">
           {featuredItems.map((product) => (
             <div key={product.id} className="menu-wrapper w-full h-full">
               <ProductCard
@@ -106,7 +106,7 @@ export default function HomeMenu() {
             <div 
               onMouseEnter={onCardEnter}
               onMouseLeave={onCardLeave}
-              className="menu-card relative w-full aspect-auto min-h-[180px] sm:min-h-0 sm:aspect-[4/5] rounded-md p-5 flex flex-col justify-between bg-secondary border border-secondary"
+              className="menu-card relative w-full h-full rounded-md p-5 flex flex-col justify-between bg-secondary border border-secondary"
             >
               <div className="flex -space-x-2 mb-auto pointer-events-none">
                 <div className="w-4 h-4 rounded-full bg-primary-light"></div>
