@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Heart } from "lucide-react";
+import { Heart, ShoppingCart } from "lucide-react";
 import Image from "next/image";
 
 export function ProductCard({
@@ -65,18 +65,19 @@ export function ProductCard({
             {title}
           </h4>
 
-          {/* Bottom Bar: Cart Button & Price */}
-          <div className="flex flex-col gap-2 mt-2">
-            <button
-              className={`w-full px-3 py-2.5 rounded-md text-xs sm:text-[13px] font-medium transition-colors text-center ${btnColorClass}`}
-            >
-              Add to cart
-            </button>
+          {/* Bottom Bar: Price & Cart Button */}
+          <div className="flex justify-between items-center gap-2 mt-2">
             <div
-              className={`w-full px-2.5 py-2.5 rounded-md text-xs sm:text-[13px] font-bold shadow-sm text-center ${priceColorClass}`}
+              className={`flex-1 px-2 py-2 rounded-md text-xs sm:text-[13px] font-bold shadow-sm flex items-center justify-center ${priceColorClass}`}
             >
               Rp. {price.toLocaleString('id-ID')}
             </div>
+            <button
+              className={`flex-shrink-0 w-9 h-9 sm:w-10 sm:h-10 rounded-md flex items-center justify-center transition-colors ${btnColorClass}`}
+              aria-label="Add to cart"
+            >
+              <ShoppingCart className="w-4 h-4 sm:w-5 sm:h-5" />
+            </button>
           </div>
         </div>
       </div>
