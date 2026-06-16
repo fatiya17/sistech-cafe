@@ -34,13 +34,13 @@ The visual design is built around warm, cozy, and playful colors. Here are the m
 
 | Role | Color Name | Hex Code | Preview |
 |------|------------|----------|---------|
-| **Primary** | Brand Pink | `#FF74B1` | ![](https://img.shields.io/badge/-%23FF74B1?style=flat-square&color=FF74B1) |
-| **Primary Light**| Soft Pink | `#FFEBF7` | ![](https://img.shields.io/badge/-%23FFEBF7?style=flat-square&color=FFEBF7) |
-| **Secondary** | Brand Brown | `#574933` | ![](https://img.shields.io/badge/-%23574933?style=flat-square&color=574933) |
-| **Accent** | Tag Yellow | `#FFE479` | ![](https://img.shields.io/badge/-%23FFE479?style=flat-square&color=FFE479) |
-| **Background** | Warm Cream | `#F3E9DC` | ![](https://img.shields.io/badge/-%23F3E9DC?style=flat-square&color=F3E9DC) |
-| **Text Dark** | Near Black | `#1C1B18` | ![](https://img.shields.io/badge/-%231C1B18?style=flat-square&color=1C1B18) |
-| **Text Body** | Warm Brown | `#675E50` | ![](https://img.shields.io/badge/-%23675E50?style=flat-square&color=675E50) |
+| **Primary** | Brand Pink | `#FF74B1` | ![](https://placehold.co/80x25/FF74B1/FF74B1.png) |
+| **Primary Light**| Soft Pink | `#FFEBF7` | ![](https://placehold.co/80x25/FFEBF7/FFEBF7.png) |
+| **Secondary** | Brand Brown | `#574933` | ![](https://placehold.co/80x25/574933/574933.png) |
+| **Accent** | Tag Yellow | `#FFE479` | ![](https://placehold.co/80x25/FFE479/FFE479.png) |
+| **Background** | Warm Cream | `#F3E9DC` | ![](https://placehold.co/80x25/F3E9DC/F3E9DC.png) |
+| **Text Dark** | Near Black | `#1C1B18` | ![](https://placehold.co/80x25/1C1B18/1C1B18.png) |
+| **Text Body** | Warm Brown | `#675E50` | ![](https://placehold.co/80x25/675E50/675E50.png) |
 
 **Typography:**
 - **Headings:** `Bricolage Grotesque` (Strong and bold for large text)
