@@ -11,7 +11,7 @@ export default function MenuPage() {
 
   return (
     <div className="min-h-screen gradient-hero dark:bg-none pt-10 pb-20">
-      <div className="container-site w-full px-4 md:px-8 relative">
+      <div className="max-w-[1000px] mx-auto w-full px-4 md:px-8 relative">
         
         {/* Breadcrumbs & Mobile Filter Button */}
         <div className="flex justify-between items-center mb-6">
