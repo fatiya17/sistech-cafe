@@ -112,7 +112,7 @@ export default function Navbar() {
               onMouseLeave={onBtnLeave}
             >
               <Link href="/register">
-                <Button variant={scrolled ? "primary" : "secondary"} className={`px-5 py-2 rounded-md font-medium text-sm shadow-sm h-10 border-none transition-colors ${scrolled ? "bg-white text-primary hover:bg-white/90" : ""}`}>
+                <Button variant={scrolled ? "primary" : "secondary"} className={`px-5 py-2 rounded-md font-medium text-sm shadow-sm h-10 border-none transition-colors ${scrolled ? "bg-white text-primary hover:bg-secondary hover:text-surface" : ""}`}>
                   Sign Up
                 </Button>
               </Link>
