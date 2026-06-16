@@ -1,21 +1,19 @@
-<p align="left">
+<h1>
   <a href="https://github.com/fatiya17/sistech-cafe">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="./public/assets/flower-polos-1.png">
       <source media="(prefers-color-scheme: light)" srcset="./public/assets/flower-polos-2.png">
-      <img alt="Sistech Cafe Logo" src="./public/assets/flower-polos-2.png" width="90">
+      <img alt="Sistech Cafe Logo" src="./public/assets/flower-polos-2.png" width="60" align="center">
     </picture>
   </a>
-</p>
-
-# Sistech Cafe
+  Sistech Cafe
+</h1>
 
 **Sistech Cafe** is a modern and interactive website designed for an artisanal coffee shop. It acts as a digital storefront that shows the cafe's unique brand, menu items, and important information for visitors.
 
 This project focuses on providing a smooth and welcoming experience for users, making them feel the warm and cozy atmosphere of the cafe directly through their screens.
 
 [![Next.js Version](https://img.shields.io/badge/Next.js-%3E%3D%2014.0-black.svg)](https://nextjs.org)
-[![React Version](https://img.shields.io/badge/React-%3E%3D%2018.0-blue.svg)](https://react.dev)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-%3E%3D%203.4-38B2AC.svg)](https://tailwindcss.com)
 [![GSAP](https://img.shields.io/badge/GSAP-Animations-88CE02.svg)](https://gsap.com)
 [![Project Status](https://img.shields.io/badge/Project_Status-Active-brightgreen.svg)](https://shields.io/)
@@ -65,7 +63,7 @@ The visual design is built around warm, cozy, and playful colors. Here are the m
 
 ## Technologies Used
 
-* **Next.js & React:** The core tools used to build the website structure and interactive parts.
+* **Next.js:** The core framework used to build the website structure and interactive parts.
 * **Tailwind CSS:** A tool to style the website quickly and ensure it looks good on any screen size.
 * **GSAP & Framer Motion:** Special libraries used to create smooth, high-quality animations.
 * **Lucide React:** A collection of clean and simple icons used across the site.
