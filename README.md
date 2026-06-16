@@ -1,36 +1,107 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align="left">
+  <a href="https://github.com/fatiya17/sistech-cafe">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="./public/assets/flower-polos-1.png">
+      <source media="(prefers-color-scheme: light)" srcset="./public/assets/flower-polos-2.png">
+      <img alt="Sistech Cafe Logo" src="./public/assets/flower-polos-2.png" width="90">
+    </picture>
+  </a>
+</p>
 
-## Getting Started
+# Sistech Cafe
 
-First, run the development server:
+**Sistech Cafe** is a modern and interactive website designed for an artisanal coffee shop. It acts as a digital storefront that shows the cafe's unique brand, menu items, and important information for visitors.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This project focuses on providing a smooth and welcoming experience for users, making them feel the warm and cozy atmosphere of the cafe directly through their screens.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+[![Next.js Version](https://img.shields.io/badge/Next.js-%3E%3D%2014.0-black.svg)](https://nextjs.org)
+[![React Version](https://img.shields.io/badge/React-%3E%3D%2018.0-blue.svg)](https://react.dev)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-%3E%3D%203.4-38B2AC.svg)](https://tailwindcss.com)
+[![GSAP](https://img.shields.io/badge/GSAP-Animations-88CE02.svg)](https://gsap.com)
+[![Project Status](https://img.shields.io/badge/Project_Status-Active-brightgreen.svg)](https://shields.io/)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+<br/>
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+![Sistech Cafe Preview](./public/preview.png)
 
-## Learn More
+## About The Project
 
-To learn more about Next.js, take a look at the following resources:
+Sistech Cafe is more than just a place to drink coffee; it is a place where local taste meets modern comfort. This website brings that physical warmth into a digital space. 
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The website is built to feel like a fast, single-page application. It features a unique story-style contact form, smooth page layouts, and playful animations that create an engaging and friendly atmosphere for anyone visiting the site.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Brand Identity & Color Palette
 
-## Deploy on Vercel
+The visual design is built around warm, cozy, and playful colors. Here are the main colors used throughout the website:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+| Role | Color Name | Hex Code | Preview |
+|------|------------|----------|---------|
+| **Primary** | Brand Pink | `#FF74B1` | ![](https://img.shields.io/badge/-%23FF74B1?style=flat-square&color=FF74B1) |
+| **Primary Light**| Soft Pink | `#FFEBF7` | ![](https://img.shields.io/badge/-%23FFEBF7?style=flat-square&color=FFEBF7) |
+| **Secondary** | Brand Brown | `#574933` | ![](https://img.shields.io/badge/-%23574933?style=flat-square&color=574933) |
+| **Accent** | Tag Yellow | `#FFE479` | ![](https://img.shields.io/badge/-%23FFE479?style=flat-square&color=FFE479) |
+| **Background** | Warm Cream | `#F3E9DC` | ![](https://img.shields.io/badge/-%23F3E9DC?style=flat-square&color=F3E9DC) |
+| **Text Dark** | Near Black | `#1C1B18` | ![](https://img.shields.io/badge/-%231C1B18?style=flat-square&color=1C1B18) |
+| **Text Body** | Warm Brown | `#675E50` | ![](https://img.shields.io/badge/-%23675E50?style=flat-square&color=675E50) |
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Typography:**
+- **Headings:** `Bricolage Grotesque` (Strong and bold for large text)
+- **Body Text:** `Be Vietnam Pro` (Clean and easy to read for paragraphs)
+
+## Key Features
+
+### Menu Showcase
+* **Responsive Layout:** The menu items look great on all devices, adjusting automatically whether you use a mobile phone or a desktop computer.
+* **Interactive Design:** Buttons and images respond smoothly when you click or hover over them.
+* **Clear Categories:** Labels and tags make it easy to find best-sellers and new items.
+
+### Smooth Animations
+* **Scroll Effects:** Characters and text animate nicely as you scroll down the page.
+* **Smart Navigation Bar:** The top menu bar changes color when you scroll to make sure the text is always easy to read.
+
+### User Experience
+* **Friendly Contact Form:** Instead of boring boxes, the contact page lets you fill in the blanks like writing a letter.
+* **Mobile-Friendly:** Designed from the ground up to be easy to tap and navigate on touch screens.
+
+## Technologies Used
+
+* **Next.js & React:** The core tools used to build the website structure and interactive parts.
+* **Tailwind CSS:** A tool to style the website quickly and ensure it looks good on any screen size.
+* **GSAP & Framer Motion:** Special libraries used to create smooth, high-quality animations.
+* **Lucide React:** A collection of clean and simple icons used across the site.
+
+---
+
+## How to Run the Project
+
+1. **Download the code:**
+   ```bash
+   git clone https://github.com/fatiya17/sistech-cafe.git
+   cd sistech-cafe
+   ```
+
+2. **Install what is needed:**
+   ```bash
+   npm install
+   ```
+
+3. **Start the website locally:**
+   ```bash
+   npm run dev
+   ```
+
+4. **View in your browser:**
+   Open `http://localhost:3000` to see the website running.
+
+---
+
+## Credits & Authors
+
+**Sistech Cafe Website** is designed and developed by:
+
+* **Fatiya Labibah** - Frontend Developer & Designer
+
+This project is a showcase of building a modern website that combines good design with smooth technical performance.
+
+---
+*© 2026 Sistech Cafe.*
