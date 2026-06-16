@@ -50,16 +50,16 @@ export default function Navbar() {
     <>
       <nav
         className={`fixed top-0 w-full z-40 transition-colors duration-300 ${
-          scrolled ? "bg-background/65 backdrop-blur-md shadow-sm border-b border-border" : "bg-transparent"
+          scrolled ? "bg-primary shadow-sm border-b border-primary-light/20" : "bg-transparent"
         }`}
       >
         <div className="max-w-[1280px] mx-auto px-4 md:px-8 h-14 md:h-16 flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
             <div className="relative w-8 h-8 md:w-9 md:h-9 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-[360deg]">
-              <Image src="/assets/flower-polos-2.png" alt="Mascot Sistech Cafe" fill sizes="64px" className="object-contain" />
+              <Image src={scrolled ? "/assets/flower-polos-1.png" : "/assets/flower-polos-2.png"} alt="Mascot Sistech Cafe" fill sizes="64px" className="object-contain" />
             </div>
-            <span className="font-heading font-medium text-xl md:text-xl text-text-primary dark:text-white">
+            <span className={`font-heading font-medium text-xl md:text-xl transition-colors ${scrolled ? "text-primary-foreground" : "text-text-primary dark:text-white"}`}>
               sistech cafe
             </span>
           </Link>
@@ -77,7 +77,11 @@ export default function Navbar() {
                 >
                   <Link
                     href={link.path}
-                    className={`text-sm font-medium transition-colors text-text-primary dark:text-white hover:text-primary ${isActive ? "text-primary dark:text-primary" : ""}`}
+                    className={`text-sm font-medium transition-colors ${
+                      scrolled 
+                        ? (isActive ? "text-white font-bold" : "text-primary-foreground/90 hover:text-white") 
+                        : (isActive ? "text-primary dark:text-primary" : "text-text-primary dark:text-white hover:text-primary")
+                    }`}
                   >
                     {link.label}
                   </Link>
@@ -86,7 +90,7 @@ export default function Navbar() {
                   {isActive && (
                     <motion.div
                       layoutId="activeNav"
-                      className="absolute bottom-4 left-0 right-0 h-[2px] bg-primary rounded-full"
+                      className={`absolute bottom-4 left-0 right-0 h-[2px] rounded-full ${scrolled ? "bg-white" : "bg-primary"}`}
                     />
                   )}
 
@@ -108,7 +112,7 @@ export default function Navbar() {
               onMouseLeave={onBtnLeave}
             >
               <Link href="/register">
-                <Button variant="secondary" className="px-5 py-2 rounded-md font-medium text-sm shadow-sm h-10 border-none">
+                <Button variant={scrolled ? "primary" : "secondary"} className={`px-5 py-2 rounded-md font-medium text-sm shadow-sm h-10 border-none transition-colors ${scrolled ? "bg-white text-primary hover:bg-white/90" : ""}`}>
                   Sign Up
                 </Button>
               </Link>
@@ -119,7 +123,7 @@ export default function Navbar() {
           <div className="flex md:hidden items-center gap-2">
             <button
               onClick={() => setMobileMenuOpen(true)}
-              className="p-2 rounded-md text-text-primary dark:text-white"
+              className={`p-2 rounded-md transition-colors ${scrolled ? "text-primary-foreground" : "text-text-primary dark:text-white"}`}
               aria-label="Open Menu"
             >
               <Menu size={24} />
