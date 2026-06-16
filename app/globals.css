@@ -2,13 +2,7 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
-@custom-variant dark (&:is(.dark *));
 
-@import "tailwindcss";
-@import "tw-animate-css";
-@import "shadcn/tailwind.css";
-
-@custom-variant dark (&:is(.dark *));
 
 @theme inline {
   --color-background: var(--background);
@@ -126,43 +120,7 @@
   --radius-2xl: 24px;
 }
 
-.dark {
-  --background: #1C1B18;
-  --foreground: #F3E9DC;
-  --surface: #2F2A25;
-  --bg-secondary: #2A2520;
 
-  --primary: #FF74B1;
-  --primary-foreground: #FFFFFF;
-  --primary-light: #2A1A22;
-
-  --secondary: #574933;
-  --secondary-foreground: #FFFFFF;
-
-  --text-primary: #F3E9DC;
-  --text-body: #C9B99E;
-  --text-muted: #8A7A68;
-
-  /* Menu Pastel Colors (slightly dimmed for dark mode) */
-  --pastel-mint: #9DC4B5;
-  --pastel-blue: #97B3CB;
-  --pastel-peach: #CCAB84;
-  --pastel-purple: #B59ECC;
-  --pastel-yellow: #CACC91;
-  --pastel-green: #A2CC99;
-
-  --border: rgba(243, 233, 220, 0.12);
-  --border-strong: rgba(243, 233, 220, 0.25);
-  --ring: #FF74B1;
-  
-  --muted: rgba(243, 233, 220, 0.05);
-  --muted-foreground: #8A7A68;
-  --accent: #2A1A22;
-  --accent-foreground: #FF74B1;
-
-  --highlight: #2A2520; /* Darker yellow/brown highlight */
-  --primary-muted: #3B2A34; /* Dark mode pinkish */
-}
 
 @layer base {
   * {
