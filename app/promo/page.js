@@ -10,7 +10,7 @@ export const metadata = {
 
 export default function PromoPage() {
   return (
-    <div className="min-h-screen gradient-hero dark:bg-none pt-24 pb-20 overflow-hidden">
+    <div className="min-h-screen gradient-hero  pt-24 pb-20 overflow-hidden">
       <div className="container-site w-full px-4 md:px-8 relative">
         <PromoHero />
         <PromoFeatured />

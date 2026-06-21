@@ -59,7 +59,7 @@ export default function Navbar() {
             <div className="relative w-8 h-8 md:w-9 md:h-9 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-[360deg]">
               <Image src={scrolled ? "/assets/flower-polos-1.png" : "/assets/flower-polos-2.png"} alt="Mascot Sistech Cafe" fill sizes="64px" className="object-contain" />
             </div>
-            <span className={`font-heading font-medium text-xl md:text-xl transition-colors ${scrolled ? "text-primary-foreground" : "text-text-primary dark:text-white"}`}>
+            <span className={`font-heading font-medium text-xl md:text-xl transition-colors ${scrolled ? "text-primary-foreground" : "text-text-primary "}`}>
               sistech cafe
             </span>
           </Link>
@@ -80,7 +80,7 @@ export default function Navbar() {
                     className={`text-sm font-medium transition-colors ${
                       scrolled 
                         ? (isActive ? "text-white font-bold" : "text-primary-foreground/90 hover:text-white") 
-                        : (isActive ? "text-primary dark:text-primary" : "text-text-primary dark:text-white hover:text-primary")
+                        : (isActive ? "text-primary " : "text-text-primary  hover:text-primary")
                     }`}
                   >
                     {link.label}
@@ -123,7 +123,7 @@ export default function Navbar() {
           <div className="flex md:hidden items-center gap-2">
             <button
               onClick={() => setMobileMenuOpen(true)}
-              className={`p-2 rounded-md transition-colors ${scrolled ? "text-primary-foreground" : "text-text-primary dark:text-white"}`}
+              className={`p-2 rounded-md transition-colors ${scrolled ? "text-primary-foreground" : "text-text-primary "}`}
               aria-label="Open Menu"
             >
               <Menu size={24} />
@@ -151,10 +151,10 @@ export default function Navbar() {
               className="fixed top-0 left-0 right-0 w-full bg-background/80 backdrop-blur-md z-50 p-4 pb-6 md:hidden flex flex-col shadow-lg border-b border-border"
             >
               <div className="flex items-center justify-between mb-4">
-                <span className="font-heading font-bold text-xl text-text-primary dark:text-white ml-2">sistech cafe</span>
+                <span className="font-heading font-bold text-xl text-text-primary  ml-2">sistech cafe</span>
                 <button
                   onClick={() => setMobileMenuOpen(false)}
-                  className="p-2 text-text-primary dark:text-white hover:opacity-70"
+                  className="p-2 text-text-primary  hover:opacity-70"
                   aria-label="Close Menu"
                 >
                   <X size={24} />
@@ -170,7 +170,7 @@ export default function Navbar() {
                       href={link.path}
                       onClick={() => setMobileMenuOpen(false)}
                       className={`text-base font-medium p-3 rounded-md transition-colors ${
-                        isActive ? "bg-primary text-white" : "text-text-primary dark:text-white hover:bg-black/5 dark:hover:bg-white/10"
+                        isActive ? "bg-primary text-white" : "text-text-primary  hover:bg-black/5 "
                       }`}
                     >
                       {link.label}

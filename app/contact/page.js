@@ -9,7 +9,7 @@ export const metadata = {
 
 export default function ContactPage() {
   return (
-    <div className="min-h-screen bg-[linear-gradient(to_bottom,#F3E9DC,#EBC5DA,#FFEBF7,#F3E9DC)] dark:bg-none pt-10 pb-20">
+    <div className="min-h-screen bg-[linear-gradient(to_bottom,#F3E9DC,#EBC5DA,#FFEBF7,#F3E9DC)]  pt-10 pb-20">
       <div className="container w-full mx-auto px-4 md:px-8 relative">
         <ContactHero />
         <ContactMain />

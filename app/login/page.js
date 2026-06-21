@@ -21,28 +21,28 @@ export default function LoginPage() {
   });
 
   return (
-    <main className="min-h-screen pt-20 md:pt-12 pb-12 px-6 flex items-start justify-center gradient-hero dark:bg-none">
+    <main className="min-h-screen pt-20 md:pt-12 pb-12 px-6 flex items-start justify-center gradient-hero ">
       <div className="container-form w-full flex flex-col p-4 md:p-8">
         <div className="text-center mb-12 md:mb-16">
-          <h1 className="font-heading text-3xl md:text-5xl font-bold text-text-primary dark:text-white mb-2 tracking-tight">Welcome Back</h1>
-          <p className="text-text-body dark:text-text-muted text-sm md:text-base">Please log in to your account</p>
+          <h1 className="font-heading text-3xl md:text-5xl font-bold text-text-primary  mb-2 tracking-tight">Welcome Back</h1>
+          <p className="text-text-body  text-sm md:text-base">Please log in to your account</p>
         </div>
 
         <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
           <div className="space-y-2">
-            <label className="text-sm font-medium text-text-primary dark:text-white">Email</label>
+            <label className="text-sm font-medium text-text-primary ">Email</label>
             <input 
               type="email" 
               placeholder="Enter your email" 
-              className="w-full px-4 py-3 rounded-md border border-border bg-white/40 dark:bg-black/20 text-text-primary dark:text-white focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+              className="w-full px-4 py-3 rounded-md border border-border bg-white/40  text-text-primary  focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
             />
           </div>
           <div className="space-y-2">
-            <label className="text-sm font-medium text-text-primary dark:text-white">Password</label>
+            <label className="text-sm font-medium text-text-primary ">Password</label>
             <input 
               type="password" 
               placeholder="Enter your password" 
-              className="w-full px-4 py-3 rounded-md border border-border bg-white/40 dark:bg-black/20 text-text-primary dark:text-white focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+              className="w-full px-4 py-3 rounded-md border border-border bg-white/40  text-text-primary  focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
             />
           </div>
           
@@ -62,7 +62,7 @@ export default function LoginPage() {
           </div>
         </form>
 
-        <p className="text-center mt-8 text-sm md:text-base text-text-body dark:text-text-muted">
+        <p className="text-center mt-8 text-sm md:text-base text-text-body ">
           Don&apos;t have an account?{" "}
           <Link href="/register" className="text-primary font-medium hover:underline">
             Sign up

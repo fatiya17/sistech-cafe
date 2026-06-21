@@ -10,7 +10,7 @@ export default function MenuPage() {
   const [isMobileFilterOpen, setIsMobileFilterOpen] = useState(false);
 
   return (
-    <div className="min-h-screen gradient-hero dark:bg-none pt-10 pb-20">
+    <div className="min-h-screen gradient-hero  pt-10 pb-20">
       <div className="w-full px-4 md:px-8 lg:px-12 relative">
         
         {/* Breadcrumbs & Mobile Filter Button */}
